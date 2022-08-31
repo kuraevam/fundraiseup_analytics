@@ -1,0 +1,7 @@
+# compiled output
+/dist
+/node_modules
+
+.env
+/logs/
+/src/client/public/fundraiseupAnalytics.bundle.js

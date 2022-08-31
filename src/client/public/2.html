@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Demo page</title>
+    <!--<script src="./fundraiseupAnalytics.bundle.js"></script>-->
+    <script src="http://localhost:8001/fundraiseupAnalytics"></script>
+    <script>
+        fundraiseupAnalytics.tracker.track('pageview');
+        fundraiseupAnalytics.tracker.track('test', 'one', 'two', 'three');
+    </script>
+</head>
+<body>
+<button onClick="fundraiseupAnalytics.tracker.track('click-button')">Click me</button>
+<ul>
+    <li><a href="/" onClick="fundraiseupAnalytics.tracker.track('click-link', 'root')">Root</a></li>
+    <li><a href="/1.html" onClick="fundraiseupAnalytics.tracker.track('click-link', '1')">1.html</a></li>
+    <li><a href="/2.html" onClick="fundraiseupAnalytics.tracker.track('click-link', '2')">2.html</a></li>
+</ul>
+</body>
+</html>
